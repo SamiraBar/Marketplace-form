@@ -199,7 +199,7 @@ export default function ProductForm() {
       .filter((w) => w.length > 2)
       .slice(0, 5);
     const extra = ["купить", "цена", "доставка"];
-    setValue("seo_keywords", [...new Set([...words, ...extra])].slice(0, 20));
+    setValue("seo_keywords", Array.from(new Set([...words, ...extra])).slice(0, 20));
     toast.success("SEO сгенерировано из названия");
     setActiveTab("seo");
   }
