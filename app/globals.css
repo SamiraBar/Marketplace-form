@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Unbounded", sans-serif;
+  --font-body: "Onest", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F7F6F3;
+  color: #0D0F12;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.tab-active {
+  background: #0D0F12;
+  color: #F7F6F3;
+}
